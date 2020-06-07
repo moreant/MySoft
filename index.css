@@ -1,0 +1,100 @@
+a {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: unset;
+    padding: 5px;
+    height: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+
+a:hover {
+    border-bottom: 2px solid #000;
+}
+
+header {
+    display: flex;
+    padding: 24px 10%;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+header a {
+    padding: 10px 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+main {
+    padding: 0 10%;
+}
+
+/* mian下面的所有兄弟div */
+main>div {
+    margin-top: 48px;
+}
+
+.swiper-container {
+    height: 500px;
+    --swiper-theme-color: #00000046;
+}
+
+.dec {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: no-repeat center center;
+}
+
+.dec div {
+    margin-left: 10%;
+}
+
+.dec p {
+    width: 50%;
+}
+
+.produce-list {}
+
+.produce-list ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produce-list ul li {
+    flex-basis: 23%;
+}
+
+.produce-list ul li h3{
+    margin-top: 24px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Design</title>
+    <!-- 清除浏览器默认样式 -->
+    <link rel="stylesheet" href="minireset.min.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="index.css">
+    <!-- 轮播图 -->
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    <script src="swiper/swiper.min.js"> </script>
+</head>
+
+<body>
+    <header>
+        <h2>Mysoft</h2>
+        <nav>
+            <div class="nav-left">
+                <a href="">新闻</a>
+                <a href="">定价</a>
+                <a href="">支持</a>
+            </div>
+            <div class="nav-right">
+                <a href="">登录</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="dec" style="background-image: url(img/swiper-01.webp);">
+                        <div>
+                            <h1>性能巨匠</h1>
+                            <p>迄今为止功能最为强大的 Surface，全新 Surface Book 3 提供笔记本电脑、平板电脑和便携式工作室的多功能性</p>
+                            <a href="#">立即购买</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="dec" style="background-image: url(img/swiper-02.webp);">
+                        <div>
+                            <h1>618年终巨献</h1>
+                            <p>5月27日至6月20日，参与“先购机，后回收”以旧换新计划，最高折抵8,759元，赢惊喜盲盒！更多好礼、限时直降等你来享！</p>
+                            <a href="#">立享优惠</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- 产品展示 -->
+        <div class="produce-list">
+            <ul>
+                <li>
+                    <img src="img/produce-01.webp" alt="">
+                    <h3> Mysoft Teams - 安全。 稳固。 免费。 </h3>
+                    <p>Teams 可以帮助您保持高效，不论您身在何处。</p>
+                </li>
+                <li>
+                    <img src="img/produce-02.webp" alt="">
+                    <h3>属于你的 366 来了</h3>
+                    <p>了解 Microsoft 366 可实现的日常功能。</p>
+                </li>
+                <li>
+                    <img src="img/produce-03.webp" alt="">
+                    <h3>赋予便携新能量</h3>
+                    <p>全新 Sureface Go 2 结合了平板电脑的多功能性和笔记本电脑的便携性。</p>
+                </li>
+                <li>
+                    <img src="img/produce-04.webp" alt="">
+                    <h3>ebox One S</h3>
+                    <p>物超所值的游戏和娱乐设备，配备 4K 蓝光和视频流。</p>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    })        
+</script>
+
+</html>
